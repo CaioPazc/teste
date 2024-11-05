@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materialize</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="../../css/styleheader.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <header class="flex flex-col md:flex-row items-center justify-between p-4 bg-white shadow">
+        <div class="logo mb-4 md:mb-0">
+            <a href="../index.html"><img src="../../imagens/logo.png" class="h-12"></a>
+        </div>
+        <nav class="mb-4 md:mb-0 ">
+            <ul class="flex space-x-2 gap-20 ">
+                <li><a href="index.html" id="buttonhrd">Início</a></li>
+                <li><a href="estoques.html" id="buttonhrd">Produtos</a></li>
+            </ul>
+        </nav>
+        <div class="search-bar flex items-center">
+            <input type="text" placeholder="Pesquisar" class="border border-gray-300 rounded-l-md p-2">
+            <button class="bg-red-600 text-white rounded-r-md p-2">Buscar</button>
+        </div>
+    </header>
+
+    <main class="container mx-auto">
+        <div class="flex justify-between items-center py-4">
+            <div class="flex items-center">
+                <button class="text-gray-500 hover:text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </button>
+                <h2 class="text-xl font-bold ml-2">Painel de Controle</h2>
+            </div>
+            
+        </div>
+
+        <div class="bg-white shadow-2xl rounded-md p-4 grid grid-cols-1 md:grid-cols-2 gap-6 justify-center items-center">
+            <div class="p-4 flex justify-center size-full items-center"> 
+                <img src="https://images.unsplash.com/photo-1449247709967-d4461a6a6103?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&h=400&q=80">
+            </div>
+            <div class="md:w-50 pt-4 ">
+                <h3 class="text-2xl font-bold mb-2 mt-6">Raquete Tênis de mesa</h3>
+                <p class="text-sm text-gray-500 mb-4">6 Disponíveis</p>
+                <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                <p class="text-gray-600">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non.</p>
+                <div class="flex mt-4">
+                    <a href="../html/emprestarprod.html"><button class="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:ring-2 focus:ring-red-700">Emprestar</button></a>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

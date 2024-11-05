@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento</title>
+    <link rel="stylesheet" href="../css/styleagenda.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <script src="../js/dia especifico/temadiaespec.js"></script>
+</head>
+<body class="dark:bg-gray-900">
+    <header class="flex flex-col md:flex-row items-center justify-between p-4 bg-white shadow dark:bg-black">
+        <div class="logo mb-4 md:mb-0">
+            <a href="../index.html"><img id="imagemTema" class="h-12"></a>
+        </div>
+        <nav class="mb-4 md:mb-0 ">
+            <ul class="flex space-x-2 gap-20 ">
+                <li><a href="index.html" id="buttonhrd" class="dark:text-white">Início</a></li>
+                <li><a href="estoques.html" id="buttonhrd" class="dark:text-white">Produtos</a></li>
+            </ul>
+        </nav>
+        <div class="search-bar flex items-center">
+            <input type="text" placeholder="Pesquisar" class="border border-gray-300 rounded-l-md p-2">
+            <button class="bg-red-600 text-white rounded-r-md p-2">Buscar</button>
+        </div>
+    </header>
+
+    <main class="container mx-auto flex flex-col md:flex-row gap-6 mt-8 dark:bg-gray-900 text-white">
+        <section class="flex flex-col items-center ">
+            <section class="calendario flex flex-col items-center  rounded-md p-4">
+                <div class="data text-white rounded-md p-18 text-center">
+                    <h2 class="text-3xl font-bold mb-4">SEG</h2>
+                    <h3 class="text-6xl font-extrabold">29</h3>
+                </div>
+            </section>
+            <section class="filtros flex flex-col gap-4 ">
+                <div class="input-field">
+                    <h4 class="font-bold">Categorias</h4>
+                    <select id="categorias" class="w-full px-3 py-2 rounded-md border border-gray-300">
+                        <option value="" disabled selected>Escolha uma categoria</option>
+                        <option value="esportes">Esportes</option>
+                        <option value="pedagogico">Pedagógico</option>
+                        <option value="producao">Produção</option>
+                    </select>
+                </div>
+                <div class="input-field">
+                    <h4 class="font-bold">Disponibilidade</h4>
+                    <select id="disponibilidade" class="w-full px-3 py-2 rounded-md border border-gray-300">
+                        <option value="" disabled selected>Escolha uma disponibilidade</option>
+                        <option value="emprestando">Emprestando</option>
+                        <option value="reservado">Reservado</option>
+                    </select>
+                </div>
+            </section>
+        </section>
+
+        <section class="produtos flex flex-col gap-4 ">
+            <h2 class="text-2xl font-bold mb-4">Produtos Emprestados/Agendados</h2>
+            <div class="lista-produtos flex flex-col gap-4 ">
+                <div class="item-produto bg-white rounded-md p-4 shadow flex flex-col gap-2 dark:bg-gray-700 text-white ">
+                    <p class="font-bold">Raquete Tênis de mesa</p>
+                    <div class="flex justify-between">
+                        <span class="detalhe">Pessoa:</span>
+                        <span class="detalhe">Agendado:</span>
+                        <span class="detalhe">Quantidade:</span>
+                        <span class="status">Status:</span>
+                    </div>
+                </div>
+                <div class="item-produto bg-white rounded-md p-4 shadow flex flex-col gap-2 dark:bg-gray-700 text-white ">
+                    <p class="font-bold">Raquete Tênis de mesa</p>
+                    <div class="flex justify-between">
+                        <span class="detalhe">Pessoa:</span>
+                        <span class="detalhe">Agendado:</span>
+                        <span class="detalhe">Quantidade:</span>
+                        <span class="status">Status:</span>
+                    </div>
+                </div>
+                <div class="item-produto bg-white rounded-md p-4 shadow flex flex-col gap-2 dark:bg-gray-700 text-white ">
+                    <p class="font-bold">Raquete Tênis de mesa</p>
+                    <div class="flex justify-between">
+                        <span class="detalhe">Pessoa:</span>
+                        <span class="detalhe">Agendado:</span>
+                        <span class="detalhe">Quantidade:</span>
+                        <span class="status">Status:</span>
+                    </div>
+                </div>
+
+            </div>
+            <div class="paginacao flex justify-center mt-4 b">
+                <button class="bg-gray-300 hover:bg-gray-400 text-gray-700 font-bold py-2 px-4 rounded-l-md">
+                    ←
+                </button>
+                <button class="bg-gray-300 hover:bg-gray-400 text-gray-700 font-bold py-2 px-4">
+                    1
+                </button>
+                <button class="bg-gray-300 hover:bg-gray-400 text-gray-700 font-bold py-2 px-4">
+                    2
+                </button>
+                <button class="bg-gray-300 hover:bg-gray-400 text-gray-700 font-bold py-2 px-4 rounded-r-md">
+                    →
+                </button>
+            </div>
+        </section>
+
+        
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

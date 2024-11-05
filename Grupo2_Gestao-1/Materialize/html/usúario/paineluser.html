@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Materialize</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="../../css/styleheader.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/Materialize/css/styleindex.css">
+    <script src="../js/login/temaimglogin.js"></script>
+
+</head>
+
+<body class="font-sans bg-gray-100">
+
+    <header class="flex flex-col md:flex-row items-center justify-between p-4 bg-white shadow">
+        <div class="logo mb-4 md:mb-0">
+            <a href="../index.html"><img src="../../imagens/logo.png" class="h-12"></a>
+        </div>
+        <div class="search-bar flex items-center">
+            <input type="text" placeholder="Pesquisar" class="border border-gray-300 rounded-l-md p-2">
+            <button class="bg-red-600 text-white rounded-r-md p-2">Buscar</button>
+        </div>
+    </header>
+
+    <main class="p-8 ">
+        <section class=" p-12">
+
+            <h2 class="text-3xl font-bold mb-4 text-center">Central do Almoxarifado</h2>
+            <p class="mb-6 text-center">Inventário de estoque e acompanhamento de entradas e saídas em tempo real</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-3 justify-items-center bg-white rounded-lg shadow-lg p-12">
+                <div class="panel-item text-center ">
+                    <img src="../../imagens/estoque.png" alt="Estoque de materiais" class="mx-auto mb-2 w-24 h-24">
+                    <p class="mb-6">Acesse o estoque de materiais pedagógicos</p>
+                    <a href="../ADM/estoques.html"><button
+                            class="h-10 px-6 font-semibold rounded-md bg-red-600 text-white">ACESSAR</button></a>
+                </div>
+                <div class="panel-item text-center">
+                    <img src="../../imagens/agendamento.png" alt="Agendamento de materiais" class="mx-auto mb-2 w-24 h-24">
+                    <p class="mb-6">Agendamento de materiais pedagógicos</p>
+                    <a href="../ADM/agendamento.html"><button
+                            class="h-10 px-6 font-semibold rounded-md bg-red-600 text-white">AGENDAR</button></a>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="fixed bottom-0 left-0 w-full">
+        <img id="imagemwave" class="pt-4 w-full  mx-auto" src="../../imagens/vetores/teste copy 2.svg" alt="">
+        <img id="imagemfnal" class="w-full" src="../../imagens/vetores/teste v1.svg" alt="">
+    </footer>
+
+    <script>
+        function checkZoom() {
+            const devicePixelRatio = window.devicePixelRatio;
+            const screenWidth = window.innerWidth; // Pega a largura da tela em pixels
+            const imagem = document.getElementById('imagemwave');
+
+            // Verifica se o zoom está acima de 110% ou se a largura da tela é menor ou igual a 720 pixels
+            if (devicePixelRatio >= 1.1 || screenWidth <= 720 || screenWidth >= 1950) {
+                imagem.style.display = 'none';
+            } else {
+                imagem.style.display = 'block';
+            }
+        }
+
+        window.addEventListener('resize', checkZoom);
+        checkZoom();
+    </script>
+
+</body>
+
+</html>

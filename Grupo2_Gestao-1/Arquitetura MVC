@@ -1,0 +1,5 @@
+Arquitetura MVC utilizada para a construção do Back-end. 
+MVC = Divide a aplicação/responsabilidade em "Model", View", e "Controller".
+  - Model: Manipulação de Dado.
+  - View: Interação do Usuário.
+  - Controller: Camada de Controle. 

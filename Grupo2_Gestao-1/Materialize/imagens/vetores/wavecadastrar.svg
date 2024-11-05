@@ -1,0 +1,17 @@
+<svg width="100%" height="100%" id="svg" viewBox="0 0 250 120" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gradiente" x1="0%" y1="0%" x2="100%" y2="0%">
+
+      <stop offset="66.67%" style="stop-color:rgb(176, 22, 32); stop-opacity:1" />
+      <stop offset="83.33%" style="stop-color:rgb(157, 28, 36); stop-opacity:1" />
+      <stop offset="100%" style="stop-color:rgb(141, 33, 40); stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <path d="M 0,400 L 0,100 C 66.48803827751198,126.2488038277512 132.97607655502395,102.4976076555024 234,88 C 335.02392344497605,73.5023923444976 470.5837320574162,68.2583732057416 592,95 C 713.4162679425838,121.7416267942584 820.6889952153111,180.4688995215311 914,194 C 1007.3110047846889,207.5311004784689 1086.6602870813397,175.86602870813397 1172,161 C 1257.3397129186603,146.13397129186603 1348.6698564593303,148.06698564593302 1440,150 L 1440,500 L 0,1000 Z" 
+        stroke="none" 
+        stroke-width="0" 
+        fill="url(#gradiente)" 
+        fill-opacity="1" 
+        class="transition-all duration-300 ease-in-out delay-150 path-0">
+  </path>
+</svg>

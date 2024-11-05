@@ -1,0 +1,300 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+      
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    zoom: 1;
+    
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1em;
+    background-color: #fff;
+    border-bottom: 2px solid #E30613;
+    
+}
+
+
+.logo img {
+    width: 50%; 
+    height: auto;  
+}
+
+
+nav {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    margin-right: 13%;
+    margin-top: 1%;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #E30613;
+    bottom: -5px;
+    left: 0;
+    transition: width 0.3s ease-in-out;
+}
+
+nav ul li a:hover::after,
+nav ul li a.active::after {
+    width: 100%;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.search-bar .search-button {
+    margin-left: 5px;
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+main {
+    padding: 10px;
+    text-align: center;
+    margin-top: 5%;
+}
+
+.control-panel h2 {
+    font-size: 28px;
+    color: #000000;
+}
+
+.control-panel p {
+    font-size: 16px;
+    margin: 10px 0 30px;
+    color: #000000;
+}
+
+.panel-options {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.panel-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: 2px solid #E30613;
+    border-radius: 10px;
+}
+
+.panel-item img {
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+.button {
+    padding: 10px 20px;
+    background-color: #E30613;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.button:hover {
+    background-color: darkred;
+}
+/* CADASTRO */
+
+.main_cadastro {
+    padding: 0 20em 0 20em;
+}
+
+.form-section {
+    background-color: white;
+    padding: 30px;
+    max-width: 90%; /* Ajustado para telas menores */
+    margin: 0 auto;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.form-row {
+    display: flex;
+    flex-wrap: wrap; /* Permitir quebra de linha */
+    gap: 20px; 
+    margin-bottom: 20px;
+}
+
+.form-row .form-group {
+    flex: 1; 
+    min-width: 250px; /* Largura mínima para cada grupo de formulário */
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.label-imagem {
+    margin-top: 3%;
+}
+
+.file-label {
+    display: inline-block;
+    width: 100%;
+    padding: 20px;
+    margin-top: 0.1%;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.file-label:hover {
+    background-color: #e0e0e0;
+    border-color: #aaa;
+}
+
+.file-icon {
+    font-size: 24px;
+    color: #333;
+}
+
+.file-input {
+    display: none; 
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="file"],
+textarea {
+    width: 100%;
+    padding: 3%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    height: 100px;
+}
+
+.radio-group {
+    display: flex;
+    gap: 1%;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    background-color: #E30613;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button[type="submit"]:hover {
+    background-color: #cc0000;
+}
+
+.radio-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.001%;
+}
+
+input[type="radio"] {
+    display: none; 
+}
+
+.radio-button {
+    display: flex;
+    padding: 2% 2%;
+    width: 15em;
+    border-radius: 20px;
+    background-color: #e0e0e0;
+    color: #333;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+input[type="radio"]:checked + label.radio-button {
+    background-color: red;
+    color: white;
+}
+
+.radio-button:first-of-type {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.radio-button:last-of-type {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.radio-button:hover {
+    background-color: #ccc;
+}
+
+
+
+/* FIM DO CADASTRO */

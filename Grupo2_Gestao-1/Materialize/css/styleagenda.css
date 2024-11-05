@@ -1,0 +1,162 @@
+* {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+}
+
+
+header {
+    border-bottom: 2px solid #E30613;
+}
+
+
+/* botão ? */
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #E30613;
+    bottom: -5px;
+    left: 0;
+    transition: width 0.3s ease-in-out;
+}
+
+nav ul li a:hover::after,
+nav ul li a.active::after {
+    width: 100%;
+}
+
+
+
+main {
+    background-color: #ffffff;
+}
+
+/* fim botão */
+
+.calendario {
+    width: 50%;
+
+}
+
+.data {
+    background: linear-gradient(1300deg, #830000, #e30613);
+    color: white;
+    padding: 65px;
+    text-align: center;
+
+}
+
+.calendario .data h2 {
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.calendario .data h3 {
+    font-size: 90px;
+    margin-top: 0;
+    font-weight: bold;
+}
+
+
+
+
+
+.input-field select {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: white;
+    color: #000;
+    cursor: pointer;
+}
+
+
+.input-field select:focus {
+    outline: none;
+    border-color: #E30613;
+    box-shadow: 0 0 5px rgba(227, 6, 19, 0.5);
+}
+
+
+
+.produtos {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.produtos h2 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+
+.lista-produtos {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.item-produto {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.item-produto .detalhes {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+
+
+.paginacao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 7%;
+    margin-top: 2%;
+}
+
+.paginacao button {
+    padding: 10px;
+    margin: 0 5px;
+    border: none;
+    background-color: #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.paginacao button:hover {
+    background-color: #bbb;
+}
